@@ -158,6 +158,7 @@ var food = null
         var food_location = generate_location(snake)
         food = new Food(food_location)
         grid.getCellAt(food.location[0], food.location[1]).$el.css('background', 'green');
+        alert("Your score is " + snake.body.length)
         return false;
       }
       if (contains(snake.body.slice(1), [x, y]) == true) {
@@ -165,6 +166,7 @@ var food = null
         var food_location = generate_location(snake)
         food = new Food(food_location)
         grid.getCellAt(food.location[0], food.location[1]).$el.css('background', 'green');
+        alert("Your score is " + snake.body.length)
         return false;
       }
       return true
