@@ -260,6 +260,6 @@ var food = null
           food = new Food(food_location)
           grid.getCellAt(food.location[0], food.location[1]).$el.css('background', 'green');
           }
-      }, 70));
+      }, 70);
     })
 }());
