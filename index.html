@@ -1,54 +1,110 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css" type="text/css">
-    <link href='https://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <style>
-        span{
-        margin: auto;
-        padding: 15px;
-        font-size: 80px;
-        }
-        i{
-        margin: auto;
-        padding: 15px;
-        font-size: 80px;
-        }
-    </style>
-</head>
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Oscar Yih</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+<link rel="icon" href="https://avatars2.githubusercontent.com/u/10860418?v=4" type="image/png"></head>
 <body>
-    <h1>Oscar Yih</h1>
-    <h5>Ruby on Rails Developer in Los Angeles</h5>
-    <ul>
-        <li><a href="https://github.com/mysteryihs">Find my GitHub here</a></li>
-        <li><a href="https://www.linkedin.com/in/oscar-yih-5973a930">Find my LinkedIn here</a></li>
-        <li><a href="/blog">Find my blog here</a></li>
-        <li><a href="/oscaryih-web.docx" target="_blank">Download my resume here (Last updated: 10/01/18)</a></li>
-        <li>My Portfolio:
-            <ol>
-                <li><a href="https://www.guanshubiotechltd.com/">Guan Shu Bio Tech</a></li>
-                <li><a href="https://dragonrush-rails.herokuapp.com/">Plus Frames: Storing tips and tricks for gamers</a></li>
-                <li><a href="https://guarded-bastion-44854.herokuapp.com/">Odinbook: A Facebook Mockup</a></li>
-            </ol>
-        </li>
-    </ul>
-    <div>
-    	<span class="devicons devicons-ruby"></span>
-    	<span class="devicons devicons-ruby_on_rails"></span>
-    	<span class="devicons devicons-rails"></span>
-    	<span class="devicons devicons-nodejs_small"></span>
-    	<i class="devicon-react-original"></i>
-    	<span class="devicons devicons-php"></span>
-    	<span class="devicons devicons-magento"></span>
-    	<span class="devicons devicons-wordpress"></span>
+    <div id="loading">
+        <div id="spinner"></div>
     </div>
-    <h5>Contact Me</h5>
-    <ul>
-        <li>E-mail: cyih@live.com</li>
-        <li>Phone number: (626) 417-4219</li>
-    </ul>
-    <hr>
-    <blockquote>“When I wrote this, only God and I understood what I was doing. Now, God only knows.” ― Karl Weierstrass</blockquote>
-</body>
-</html>
+    <div id="profile">
+        <div id="profile_img" style="background: url(https://avatars2.githubusercontent.com/u/10860418?v=4) center;"></div>
+        <div id="username"><span style="display:block;">Oscar Yih</span>Web Developer</div>
+        <div id="userbio" style="display: none;">undefined</div>
+        <div id="about">
+                <span style="display:none;"><i class="fas fa-users"></i> &nbsp; null</span>
+                <span style="display:none;"><i class="fas fa-envelope"></i> &nbsp; null</span>
+                <span style="display:block;"><i class="fas fa-link"></i> &nbsp; <a href="mailto:cyih@live.com">cyih@live.com</a></span>
+                <span style="display:block;"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; Hacienda Heights, CA</span>
+                <span style="display:block;"><i class="fas fa-user-tie"></i> &nbsp;&nbsp; <a class="about-link" href="/oscaryih-web.docx" target="_blank">Download Resume (05/20/19)</a></span>
+        </div>
+    </div>
+    <div id="display">
+        <div id="work">
+            <h1>Work.</h1>
+            <div class="projects" id="work_section">
+                        <a href="https://www.affordableled.com/" target="_blank">
+                        <section>
+                            <div class="section_title">AffordableLED</div>
+                            <div class="about_section">
+                            <span style="display:none;">undefined</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Magento 2</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://dragonrush-rails.herokuapp.com/" target="_blank">
+                        <section>
+                            <div class="section_title">Plus Frames</div>
+                            <div class="about_section">
+                            <span style="display:none;">undefined</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Ruby on Rails</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://guanshubiotechltd.com/" target="_blank">
+                            <section>
+                                <div class="section_title">Guan Shu Bio Tech</div>
+                                <div class="about_section">
+                                <span style="display:none;">undefined</span>
+                                </div>
+                                <div class="bottom_section">
+                                    <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Ruby on Rails, React</span>
+                                </div>
+                        </section>
+                        </a>
+            </div>
+        </div>
+        <div id="forks" style="display:none;">
+            <h1>Forks.</h1>
+            <div class="projects" id="forks_section"></div>
+        </div>
+        <div id="blog_section">
+            <h1>Blog.</h1>
+            <div id="blogs"></div>
+        </div>
+        <div id="footer">
+            <a href="https://github.com/mysteryihs" target="_blank">“When I wrote this, only God and I understood what I was doing. Now, God only knows.” ― Karl Weierstrass</a>
+        </div>
+    </div>
+    <script type="text/javascript">
+    setTimeout(function(){
+        document.getElementById("loading").classList.add("animated");
+        document.getElementById("loading").classList.add("fadeOut");
+        setTimeout(function(){
+        document.getElementById("loading").classList.remove("animated");
+        document.getElementById("loading").classList.remove("fadeOut");
+        document.getElementById("loading").style.display = "none";
+        },800);
+    },1500);
+    $.getJSON("blog.json", function(blog){
+        if(blog.length == 0){
+            return document.getElementById("blog_section").style.display = "none";
+        }
+        for(var i = 0; i < blog.length; i++){
+            $("#blogs").append(`
+            <a href="./blog/${blog[i].url_title}/" target="_blank">
+                <section>
+                    <img src="${blog[i].top_image}">
+                    <div class="blog_container">
+                        <div class="section_title">${blog[i].title}</div>
+                        <div class="about_section">
+                            ${blog[i].sub_title}
+                        </div>
+                    </div>
+                </section>
+            </a>
+            `);
+        }
+    });
+    </script>
+
+</body></html>
