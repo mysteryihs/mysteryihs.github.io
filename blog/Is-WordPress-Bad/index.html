@@ -1,0 +1,82 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Is WordPress Bad?</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="../../index.css"></head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <a href="/" class="go_back"><i class="fas fa-arrow-left"></i></a>
+    <div id="background"></div>
+    <table id="profile_blog">
+        <tbody><tr>
+            <td style="width:8vw;"><div id="profile_img_blog"></div></td>
+            <td style="width:52vw;">
+                <div id="username_blog"></div>
+            </td>
+        </tr>
+    </tbody></table>
+    <div id="blog-display">
+        <h1 id="blog_title">Is WordPress Bad?</h1>
+        <h2 id="blog_sub_title">WordPress is one of the most hacked websites on the internet. Does that mean it's bad? (The short answer is no.)</h2>
+        <img src="https://mageewp.com/wp-content/uploads/2015/07/wordpress-logo-680x400.png" style="display:block;margin:0 auto;">
+        <div id="blog">
+            <p><a href="https://www.zdnet.com/article/wordpress-accounted-for-90-percent-of-all-hacked-cms-sites-in-2018/">In 2018, 90% of all hacked CMS websites was using WordPress.</a> 
+                When I tell people that WordPress websites are often hacked many first assume that WordPress is a bad platform to use, which I'm here to challenge.
+            </p>
+            <p>
+                If I were to compare web platforms to car brands then WordPress is similar to Honda, but much more popular. <a href="https://www.forbes.com/sites/jimgorzelany/2018/09/18/hottest-wheels-the-most-stolen-new-and-used-cars-in-the-u-s/">The Honda Civic and Honda Accord are some of the most stolen cars in America.</a> 
+                If this statistic is true then does that mean Honda is bad at making cars? Unlikely, because Honda is widely regarded as one of the best car brands. The same logic applies to WordPress. 
+                So why are Honda cars some of the most stolen cars and why is WordPress one of the most hacked websites?
+            </p>
+            <h3>Outdated security is a significant reason.</h3>
+            <p>
+                If you look more closely at the source I posted on most stolen cars, you'll notice that the top two cars are Honda cars from the late 90s. Older cars are susceptible to break ins as they become more familiar to thieves and the same goes for websites. 
+                Although it's more difficult to update the security of an older car it's much easier to update a website, yet many websites don't get updated due to negligence and lack of knowledge.
+            </p>
+            <h3>User negligence is another reason.</h3>
+            <p>
+                Much like leaving your doors unlocked or your keys in the ignition, using a weak or compromised password makes it incredibly easy to break into a website. All one has to do is simply attempt to break in and find success.
+            </p>
+            <h3>Bad implementation and excessive use of plugins is another contributing factor.</h3>
+            <p>
+                It's no secret that WordPress is often used and abused. Many developers add plugins and extra functionality without considering the costs. 
+                Each added plugin increases the chances of potential weaknesses and much like the foundation of structures, if one thing begins to fall then so does everything else.
+            </p>
+            <h3>And finally, sheer popularity drives high numbers.</h3>
+            <p>
+                Perhaps the biggest contributor to high amounts of WordPress websites being hacked is simply its widespread use. <a href="https://venturebeat.com/2019/10/18/ai-weekly-why-google-still-needs-the-cloud-even-with-on-device-ml/">WordPress makes up 30% of ALL websites and also 60% of all CMS websites.</a>
+                Much like the Honda Civic and Honda Accord, there's a high amount of break ins due to those cars being everywhere. The same concept applies to WordPress.
+            </p>
+        </div>
+    </div>
+    <div id="footer_blog">
+        <a href="https://github.com/mysteryihs" target="_blank">“When I wrote this, only God and I understood what I was doing. Now, God only knows.” ― Karl Weierstrass</a>
+    </div>
+    <script type="text/javascript">
+    setTimeout(function(){
+        document.getElementById("loading").classList.add("animated");
+        document.getElementById("loading").classList.add("fadeOut");
+        setTimeout(function(){
+        document.getElementById("loading").classList.remove("animated");
+        document.getElementById("loading").classList.remove("fadeOut");
+        document.getElementById("loading").style.display = "none";
+        },800);
+    },1500);
+    $.getJSON("../../config.json", function(user){
+        var icon = document.createElement("link");
+        icon.setAttribute("rel", "icon");
+        icon.setAttribute("href", user[0].userimg);
+        icon.setAttribute("type", "image/png");
+        document.getElementsByTagName("head")[0].appendChild(icon);
+        document.getElementById("profile_img_blog").style.background = `url('${user[0].userimg}') center center`;
+        document.getElementById("username_blog").innerHTML = `<spanstyle="display:${user[0].name == null || !user[0].name ? 'none' : 'block'};">${user[0].name}</span><br>@${user[0].username}<b id="blog_time"></b>`;
+    });
+    </script>
+
+</body></html>
