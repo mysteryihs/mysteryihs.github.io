@@ -152,6 +152,9 @@
             return document.getElementById("blog_section").style.display = "none";
         }
         for(var i = 0; i < blog.length; i++){
+            if (blog[i].visible == false) {
+                continue;
+            }
             $("#blogs").append(`
             <a href="./blog/${blog[i].url_title}/" target="_blank">
                 <section>

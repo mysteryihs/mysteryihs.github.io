@@ -7,6 +7,13 @@
   "visible": true
  },
  {
+   "url_title": "Why-Use-Password-Manager",
+   "title": "Why you should REALLY use a password manager.",
+   "sub_title": "Do you use the same password for all your accounts? If so, that's a terrible idea and a password manager fixes that.",
+   "top_image": "https://www.howtogeek.com/wp-content/uploads/2019/11/img_5dcdb2cfe6171.png",
+   "visible": false
+  },
+ {
     "url_title": "Is-WordPress-Bad",
     "title": "Is WordPress Bad?",
     "sub_title": "WordPress is one of the most hacked websites on the internet. Does that mean it's bad? (The short answer is no.)",
