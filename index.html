@@ -84,7 +84,7 @@
                                 <div class="bottom_section">
                                     <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Ruby on Rails, React</span>
                                 </div>
-                        </section>
+                            </section>
                         </a>
                         <a href="#quality_inspections_modal" rel="modal:open">
                             <section>
@@ -95,13 +95,33 @@
                                 <div class="bottom_section">
                                     <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; HTML, CSS, JS</span>
                                 </div>
-                        </section>
+                            </section>
                         </a>
             </div>
         </div>
         <div id="forks" style="display:none;">
             <h1>Forks.</h1>
             <div class="projects" id="forks_section"></div>
+        </div>
+        <div id="skills">
+            <h1>Skills.</h1>
+            <div class="skills" id="skills_section">
+                <a href="https://wordpress.org/" target="_blank">
+                    <section>
+                        <div class="section_title">WordPress</div>
+                    </section>
+                </a>
+                <a href="https://magento.com/" target="_blank">  
+                    <section>
+                        <div class="section_title">Magento</div>
+                    </section>
+                </a>
+                <a href="https://www.shopify.com/" target="_blank">
+                    <section>
+                        <div class="section_title">Shopify</div>
+                    </section>
+                </a>
+            </div>
         </div>
         <div id="blog_section">
             <h1>Blog.</h1>
@@ -156,7 +176,7 @@
                 continue;
             }
             $("#blogs").append(`
-            <a href="./blog/${blog[i].url_title}/" target="_blank">
+            <a href="./blog/${blog[i].url_title}/">
                 <section>
                     <img src="${blog[i].top_image}">
                     <div class="blog_container">
