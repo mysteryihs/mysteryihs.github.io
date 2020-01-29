@@ -4,6 +4,7 @@
   "title": "What is a domain?",
   "sub_title": "Domains explained and common questions answered.",
   "top_image": "/images/blog1.png",
+  "alt_text": "domain image",
   "visible": true
  },
  {
@@ -11,6 +12,7 @@
    "title": "Why you should REALLY use a password manager.",
    "sub_title": "Do you use the same password for all your accounts? If so, that's a terrible idea and a password manager fixes that.",
    "top_image": "/images/blog3.png",
+   "alt_text": "password image",
    "visible": true
   },
  {
@@ -18,6 +20,7 @@
     "title": "Is WordPress Bad?",
     "sub_title": "WordPress is one of the most hacked websites on the internet. Does that mean it's bad? (The short answer is no.)",
     "top_image": "/images/blog2.png",
+    "alt_text": "wordpress logo",
     "visible": true
  }
 ]

@@ -172,7 +172,7 @@
     </div>
     <div id="other_skills_modal" class="modal"">
         <h1>Other Skills.</h1>
-        <div class="skills" id="skills_section">
+        <div class="skills" id="other_skills_section">
             <a href="https://rubyonrails.org/" target="_blank">
                 <section>
                     <div class="section_title">Ruby on Rails</div>
@@ -212,7 +212,7 @@
             $("#blogs").append(`
             <a href="/blog/${blog[i].url_title}/">
                 <section>
-                    <img src="${blog[i].top_image}">
+                    <img src="${blog[i].top_image}" alt="${blog[i].alt_text}">
                     <div class="blog_container">
                         <div class="section_title">${blog[i].title}</div>
                         <div class="about_section">
