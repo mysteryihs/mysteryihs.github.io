@@ -115,17 +115,17 @@
         <div id="skills">
             <h1>技能.</h1>
             <div class="skills" id="skills_section">
-                <a href="https://wordpress.org/" target="_blank">
+                <a href="https://wordpress.org/" target="_blank"  rel="noopener">
                     <section>
                         <div class="section_title">WordPress</div>
                     </section>
                 </a>
-                <a href="https://magento.com/" target="_blank">  
+                <a href="https://magento.com/" target="_blank"  rel="noopener">  
                     <section>
                         <div class="section_title">Magento</div>
                     </section>
                 </a>
-                <a href="https://www.shopify.com/" target="_blank">
+                <a href="https://www.shopify.com/" target="_blank"  rel="noopener">
                     <section>
                         <div class="section_title">Shopify</div>
                     </section>
@@ -209,7 +209,7 @@
             $("#blogs").append(`
             <a href="/blog/${blog[i].url_title}/" target="_blank">
                 <section>
-                    <img src="${blog[i].top_image}">
+                    <img src="${blog[i].top_image}" alt="${blog[i].alt_text}">
                     <div class="blog_container">
                         <div class="section_title">${blog[i].title}</div>
                         <div class="about_section">

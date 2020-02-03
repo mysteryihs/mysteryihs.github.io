@@ -274,6 +274,11 @@ body{
     padding:4vh 0px !important;
 }
 
+#faq {
+    margin:2vh 0px;
+    padding:4vh 0px !important;
+}
+
 .skills {
     columns: 2;
 }
@@ -287,9 +292,39 @@ body{
     color: grey;
 }
 
+.faq {
+    columns: 2;
+}
+
+.faq a {
+    text-decoration: none;
+    color: grey;
+}
+
 .projects {
     columns:2;
 }
+
+.faq section {
+    width:85%;
+    padding:2.5vh 5%;
+    display:inline-block;
+    border-radius:5px;
+    color:var(--text-color);
+    border:1px solid rgb(0, 0, 0, 0.08);
+    box-shadow:0px 0px 0px rgb(0, 0, 0, 0);
+    transition:0.4s ease-in-out;
+    margin:2vh 0px;
+    transform:scale(1);    
+}
+
+.faq section:hover {
+    cursor: pointer;
+    border:1px solid rgb(0, 0, 0, 0);
+    box-shadow:0px 15px 35px rgb(0, 0, 0, 0.06);
+    transform:scale(1.03);
+}
+
 
 .skills section {
     width:85%;
@@ -432,10 +467,22 @@ body{
     #work {
         margin:0px;
     }
-    #projects {
+    .projects {
         columns:1;
     }
-    #projects section {
+    .projects section {
+        width:88%;
+    }
+    .skills {
+        columns:1;
+    }
+    .skills section {
+        width:88%;
+    }
+    .faq {
+        columns:1;
+    }
+    .faq section {
         width:88%;
     }
     #blogs {
